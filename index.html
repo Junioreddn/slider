@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="../style.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body style="background-image: url(data:image/jpeg;base64,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); background-size:cover">
+		<div class="reveal">
+			<div class="slides">
+				<!-- Presentacion -->
+				<section>
+					
+					<h3>
+
+					APLICACIONES MOVILES PARA CELULARES</h3>
+					
+					<h4 style="font-size: 30px; font-weight:20">
+					PRESENTACION ACERCA DE LAS APPS MOVILES
+				</h4>
+
+					<small>Jose claudio Oleaga /</small>
+					<small>2019-8670</small>
+					<img class="image" src="Amino.jpg" alt="">
+				</section>
+
+				<!-- Slide 1 -->
+
+				<section> 
+					<section> 
+						<h3>Origen de las aplicaciones</h4>
+							<p>
+								Las primeras aplicaciones móviles datan de finales de los años 90. Estas eran lo que conocemos como la agenda, juegos arcade como el snake, editores de ringtone, etc… Estas aplicaciones cumplían funciones básicas y elementales y su diseño era bastante simple.
+							</p>
+					</section>
+					<section>
+						<h3>La evolución de las apps</h3>
+						<p>La evolución llega con la tecnología EDGE y su conexión a internet, permitiendo de este modo un mayor desarrollo de las aplicaciones ya existentes, pero las restrinciones de los fabricantes que hacían sus propios sistemas operativos y no permitían desarrolladores externos, no hacían más que paralizar a la industria.</p>
+
+					</section>
+
+					<section>
+					<p>
+						Nokia junto a Sony Ericsson y otras empresas aparecen con Symbian, que es un sistema operativo propiedad de Nokia, y que en el pasado fue producto de la alianza de varias empresas de telefonía móvil cuyo objetivo era crear un sistema operativo para terminales móviles que pudiera competir con los que hoy en día son Android de Google, iOS de Apple, Windows Phone de Microsoft y BlackBerry OS de Blackberry.
+					</p>
+						<img src="https://appsmovilescavucm.files.wordpress.com/2014/05/nokia.jpg?w=245&h=104&zoom=2" style="    
+							position: absolute;
+							right: 68%;
+							top: 97%;">
+
+						<img src="https://appsmovilescavucm.files.wordpress.com/2014/05/blackberry.jpg"
+						style="    
+						position: absolute;
+						right: 13%;
+						width: 18%;
+						height: 26%;
+						top: 99%;">
+					</section>
+
+				</section>
+
+				<!-- Slide 2 -->
+
+				<section>
+					
+						<h3> plataformas para el desarrollo movil</h3>
+						<p class="fragment" style="font-size: 32px;">
+							El mercado de las aplicaciones móviles es uno de los que mayor crecimiento está experimentando en estos momentos. Un número cada vez mayor de usuarios a nivel global utiliza a diario diferentes apps en sus teléfonos y tabletas, tanto en su vida personal como profesional.
+
+						</p>
+						
+						<p class="fragment" style="font-size: 32px;"> 
+							Entre las plataformas mas activas actualmente para las que vale la pena desarrollar estan:</p>
+						
+						<ol>
+							<li class="fragment">IOS
+							<img src="https://acf.geeknetic.es/imgri/imagenes/noticias/2019/16779-apple-ios-12-4-muestra.jpg?f=webp" 
+							style="     
+							width: 23%;
+							position: absolute;
+							right: 10%;">
+							</li>
+							<li class="fragment">Android
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HjrPkE5NzR37Dwe8D8UmaTbggjjDZa1ZXgS2OviT2pE_DU01ADawHYkhDJStA6XctdY&usqp=CAU" style="position: absolute; left: 0%; top: 79%;">
+							</li>
+						</ol>
+						
+
+				</section>
+
+				<!-- Slide 3 -->
+				<Section>
+					<section>
+						<h3>Lenguajes de programación para programar en movil</h3>
+						<img src="https://i.pinimg.com/originals/b7/73/bd/b773bd7abacd761066ee19e798145751.png" 
+						style="
+							width: 58%;
+							position: relative;">
+					</section>
+					<section id="Java">
+						<h3>JAVA</h3>
+						<p class="fragment" style="font-size: 32px;">
+							Según el índice de TIOBE, Java es el lenguaje de programación más popular a partir de junio de 2017. Si quieres desarrollar apps Android, volverá probablemente a Java. Tiene una comunidad de desarrolladores grandes y establecidas, y eso significa que usted puede conseguir fácilmente la ayuda y soporte técnico.
+
+							Por lo tanto, cuando usted está desarrollando para móviles con Java, eres libre llegar a cualquier tipo de aplicación que usted puede pensar. El único límite será tu imaginación y el nivel de tus conocimientos de Java.
+						</p>
+						<img img class="fragment" src="https://okhosting.com/resources/uploads/2019/01/java.jpg" style="width: 35%;">
+
+					</section>
+					<section id="Objective-C">
+						<h3>Objective-C</h3>
+						<p class="fragment" style="font-size: 32px;">
+							Objective-C fue el lenguaje de desarrollo original para iOS. Mientras que la lengua rápida introducida recientemente es el futuro del desarrollo de iOS, muchos proyectos avanzados todavía dependen de Objective-C. Así que la transición de Objective-C a Swift se espera que sea algo lento, y puede que necesite tanto de ellos en algunos proyectos, al menos por el momento.
+						</p>
+						<img class="fragment" src="http://geekytheory.com/wp-content/uploads/2013/03/oC.png" style="width: 35%;">
+
+					</section>
+					<section id="JavaScript">
+						<h3>JavaScript</h3>
+						<p class="fragment" style="font-size: 32px;">
+							JavaScript tiene una larga historia que se remonta a los inicios de la World Wide Web. Un lenguaje muy popular front-end y el servidor, permite los desarrolladores web hacer todo lo posible de mejorar la experiencia del usuario de sus sitios web a la construcción de aplicaciones web completa.
+
+							Hoy en día, hay varios frameworks de JavaScript dirigidos específicamente a plataformas de desarrollo móvil, como Ionic 2 y React Native. Es muy fácil de desarrollar aplicaciones móviles multiplataforma con estos frameworks y librerías. 
+						</p>
+						<img class="fragment" src="https://oddbytes.net/wp-content/uploads/2018/01/Js-logo.png" style="width: 25%;">
+
+					</section>
+					<section id="C#">
+						<h3>C#</h3>
+						<p class="fragment" style="font-size: 32px;">
+							C# es el idioma de Windows Mobile. Es muy similar a C++ y Java. Microsoft ha adoptado algunas de las características de Java para simplificar su arquitectura, manteniendo el C++ como diseño. También tiene una gran y activa comunidad de desarrolladores que siempre es amable y servicial,
+							    tambien utiliza el framework Xamarin para desarrollar aplicaciones multiplataforma.
+						</p>
+						<img class="fragment" src="https://niixer.com/wp-content/uploads/2020/11/csharp.jpg" style="width: 25%;">
+
+					</section>
+					<section id="Dart">
+						<h3>Dart</h3>
+						<p class="fragment" style="font-size: 32px;">
+							Dart es un lenguaje de programación open source, relativamente nuevo, que fue desarrollado por Google y que lanzó su primera versión en 2011. Este lenguaje se creó con el objetivo de permitir a los desarrolladores utilizar un lenguaje orientado a objetos y con análisis estático de tipo.
+
+							Flutter es un framework que usa Dart como único código para crear aplicaciones multiplataforma. A diferencia de otros framewoks, compila a código nativo consiguiendo de esta manera un mayor rendimiento respecto a otros frameworks multiplataforma basados en web-views. 
+						</p>
+						<img class="fragment" src="https://i2.wp.com/aspgems.com/wp-content/uploads/2020/01/flutter-dart.png?fit=1200%2C600&ssl=1" style="width: 30%;">
+
+					</section>
+
+
+				</Section>
+				<!-- Slide 4 -->
+				<section>
+					<h3>Tipos de aplicaciones</h3>
+					<p class="fragment" style="font-size: 32px;">Hoy día podemos diferenciar principalmente entre 3 tipos de apps las cuales ofrecen diferentes particularidades. A continuación te mostramos las ventajas e inconvenientes que presentan cada una de ellas.</p>
+					
+					<ol>
+						<li class="fragment">Aplicaciones nativas</li>
+						<li class="fragment">Aplicaciones web o web app</li>
+						<li class="fragment">Aplicaciones híbridas</li>
+					</ol>
+				</section>
+				<!-- Slide 5 -->
+				<section>
+					<section>
+						<h3>Frameworks que se pueden usar para desarrollar aplicaciones</h3>
+						<img src="https://ciberninjas.com/wp-content/uploads/2020/10/mejores-frameworks.webp" style="width: 83%">	
+					</section>
+
+					<section>
+						<h3>Flutter</h3>
+						<p class="fragment" style="font-size: 32px;">
+							Si he decidido colocar a Flutter como el primero en esta lista, es porque supuestamente debe terminar siendo el SDK sobre el que se construya por completo los nuevos dispositivos Android; que dicho sea de paso, sigue siendo por gran mayoría el Sistema Operativo más utilizado en los smartphones y a día de hoy, casi con toda seguridad; el SO más utilizada en todo el mundo.
+						</p>
+						<img img class="fragment" src="https://www.marketing-branding.com/wp-content/uploads/2020/04/flutter-en-espan%CC%83ol-guia-completa.jpg" style="width: 35%;">
+					</section>
+
+					<section>
+						<h3>Ionic</h3>
+						<p class="fragment" style="font-size: 32px;">
+							Ionic es bastante popular entre los framework de desarrollo de aplicaciones, probablemente el que más. Ionic es básicamente una red front-end que ayuda a construir aplicaciones móviles nativas con HTML, CSS3 y Javascript.
+
+							Funciona de manera optimizada en los últimos dispositivos móviles disponibles y proporciona el mejor entorno posible para que la aplicación llegue al mercado de la manera deseada.
+						</p>
+						<img img class="fragment" src="https://www.digital55.com/wp-content/uploads/2019/07/Ionic-caracteri%CC%81sticas-novedades-y-proyectos-1.png" style="width: 35%;">
+					</section>
+
+					<section>
+						<h3>React Native</h3>
+						<p class="fragment" style="font-size: 32px;">
+							React Native, es sin duda una de las plataformas favoritas entre muchas de las grandes empresas y StartUps, tanto utilizado para construir aplicaciones Android como iOS, el desarrollo React Native permite a los desarrolladores de aplicaciones móviles crear aplicaciones de alto rendimiento en ciclos de desarrollo más cortos y tiempos de implementación más rápidos.
+						</p>
+						<img img class="fragment" src="https://estudioalfa.com/wp-content/uploads/2019/07/usar-react-native-crear-app.png" style="width: 35%;">
+					</section>
+
+					<section>
+						<h3>Xamarin</h3>
+						<p class="fragment" style="font-size: 32px;">
+							Xamarin es un Framework propiedad de Microsoft que facilita el desarrollo de las aplicaciones multiplataforma, pudiendo poder aprovechar casi en su totalidad el código de una aplicación a otra.
+
+							Xamarin favorece especialmente a los expertos en C# y .NET, siendo estos los lenguajes en los que se centra; siendo esta una gran particularidad, puesto que la mayoría de frameworks en la actualidad se centran en Javascript y HTML.
+						</p>
+						<img img class="fragment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Xamarin-logo.svg/1200px-Xamarin-logo.svg.png" style="width: 35%;">
+					</section>
+
+					<section>
+						<h3>Unity</h3>
+						<p class="fragment" style="font-size: 32px;">
+							Unity y Unity 3D, es uno de los repositorios más importantes enfocado en la creación de los videojuegos.
+
+							Ahora está preparado para ofrecerte la posibilidad de desarrollar apps de realidad aumentada, trabajando junto AWS y Google Maps, también permite guardar y cargar datos en la nube, implementar paquetes de activos y objetos programables u aprender conceptos de programación avanzados.
+						</p>
+						<img img class="fragment" src="https://unity.com/logo-unity-web.png" style="width: 35%;">
+					</section>
+
+					<section>
+						<h3>Qt</h3>
+						<p class="fragment" style="font-size: 32px;">
+						Qt es un framework de desarrollo multiplataforma que nos permite la creación de aplicaciones con múltiples lenguajes de programación; Python, C++, Qt QML, R o GO a través de su herramienta propia: Qt Creator.
+
+Los lenguajes de programación más usados a la hora de desarrollar sobre Qt son: C++ y QML.
+
+Una de las mayores ventajas que ofrece Qt, es la capacidad de generar código soportada por todos los Sistemas Operativos, y además; nos ofrece una amplio lista de librerías de fácil implementación.
+						</p>
+						<img img class="fragment" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/1200px-Qt_logo_2016.svg.png" style="width: 30%;">
+					</section>
+
+				</section>
+				<!-- Slide 6 -->
+
+				<!-- Slide 7 -->
+
+				<!-- Slide 8 -->
+
+				<!-- Slide 9 -->
+
+				<!-- Slide 10 -->
+
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
